@@ -50,7 +50,11 @@ body {
 .hero-section .hero-box {
     background-color: #FF6F61;
     padding: 2rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Makes it responsive on smaller screens */
 }
 
 .profile-photo {
