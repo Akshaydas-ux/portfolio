@@ -487,3 +487,52 @@ body {
     font-size: 1.3rem !important;
   }
 }
+/* Responsive Fixes for Mobile */
+@media (max-width: 768px) {
+  /* Fix Section 1: Navbar alignment */
+  .navbar {
+    padding: 15px;
+    border-left: 5px solid #ff6f61;
+    border-right: 5px solid #ff6f61;
+  }
+
+  .navbar h1 {
+    font-size: 20px;
+  }
+
+  .navbar p {
+    font-size: 12px;
+  }
+
+  .navbar ul li a {
+    font-size: 14px;
+  }
+
+  /* Section 2: Add white border to software box */
+  .software-section {
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+
+  .software-item {
+    gap: 10px;
+  }
+
+  .software-item img {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* Section 4: Center content properly */
+  .about-section {
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .about-section h2 {
+    font-size: 24px;
+  }
+}
