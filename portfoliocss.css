@@ -327,3 +327,106 @@ body {
     padding: 1rem;
   }
 }
+/* —————————————————————— */
+/* MOBILE OPTIMIZATIONS (≤600px) */
+/* —————————————————————— */
+@media (max-width: 600px) {
+  /* NAVIGATION */
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  .logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;
+  }
+  .logo .subheading {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .navbar a {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  /* HERO */
+  .hero-section .hero-box {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+  .hero-section .hero-box img {
+    width: 140px;
+    margin-bottom: 1rem;
+  }
+  .hero-section .hero-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* SOFTWARE SECTION */
+  .software-shadow-box {
+    width: 95%;
+    margin: 2rem auto;
+    padding: 0;
+  }
+  .software-box {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .software-heading {
+    font-size: 1.3rem;
+    top: -25px;
+    padding: 0.4rem 1.5rem;
+  }
+  .tools-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* ABOUT ME */
+  .about-box {
+    max-width: 95%;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    font-size: 0.95rem;
+  }
+
+  /* PORTFOLIO GRID */
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .project-card {
+    padding: 0.75rem;
+  }
+  .project-card h3 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  /* CONTACT */
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+  .contact {
+    padding: 2rem 1rem;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
