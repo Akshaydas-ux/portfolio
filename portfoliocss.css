@@ -430,3 +430,25 @@ body {
     font-size: 0.9rem;
   }
 }
+@media (max-width: 600px) {
+  /* Force the white shadow container full‑width */
+  .software-shadow-box {
+    width: 100% !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    margin: 2rem auto !important;
+    overflow: visible !important;
+  }
+  /* Make the inner coral box fluid */
+  .software-box {
+    width: 100% !important;
+    padding: 1.5rem 1rem !important;
+    margin: 0 auto !important;
+  }
+  /* Shrink the heading and reposition it */
+  .software-heading {
+    font-size: 1.2rem !important;
+    top: -20px !important;
+    padding: 0.4rem 1rem !important;
+  }
+}
