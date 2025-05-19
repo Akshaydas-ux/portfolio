@@ -1,3 +1,6 @@
+/* ---------------------------
+   BASE STYLES
+---------------------------- */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
@@ -21,6 +24,9 @@ body {
   font-weight: normal;
 }
 
+/* ---------------------------
+   NAVBAR
+---------------------------- */
 .navbar {
   background-color: #000;
   padding: 1rem 0;
@@ -49,6 +55,9 @@ body {
   font-weight: bold;
 }
 
+/* ---------------------------
+   HERO SECTION
+---------------------------- */
 .hero-section .hero-box {
   background-color: #FF6F61;
   padding: 2rem;
@@ -81,6 +90,9 @@ body {
   text-decoration: none;
 }
 
+/* ---------------------------
+   PORTFOLIO SECTION
+---------------------------- */
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -103,6 +115,9 @@ body {
   object-fit: cover;
 }
 
+/* ---------------------------
+   SOFTWARE SECTION
+---------------------------- */
 .software-shadow-box {
   background-color: #fff;
   padding: 1rem;
@@ -147,6 +162,9 @@ body {
   font-size: 1.2rem;
 }
 
+/* ---------------------------
+   ABOUT SECTION
+---------------------------- */
 .about-section .about-box {
   background-color: #2F2F2F;
   padding: 2rem;
@@ -157,6 +175,9 @@ body {
   text-align: center;
 }
 
+/* ---------------------------
+   CONTACT SECTION
+---------------------------- */
 .contact-form input,
 .contact-form textarea {
   display: block;
@@ -178,6 +199,9 @@ body {
   font-weight: bold;
 }
 
+/* ---------------------------
+   FOOTER
+---------------------------- */
 .footer {
   background-color: #000;
   padding: 1rem;
@@ -186,58 +210,59 @@ body {
 }
 
 /* ---------------------------
-   RESPONSIVE - Mobile Styles
+   RESPONSIVE STYLES
 ---------------------------- */
 @media (max-width: 768px) {
-  /* Navigation adjustments */
   .nav-container {
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
   }
+
   .navbar ul {
     flex-direction: column;
     gap: 0.5rem;
   }
 
-  /* Hero Section: Stack content for better vertical flow */
   .hero-section .hero-box {
     flex-direction: column;
     padding: 2rem 1rem;
   }
+
   .hero-section .hero-box img {
     width: 150px;
     margin-bottom: 1rem;
   }
+
   .hero-section .hero-text h2 {
     font-size: 1.5rem;
-    margin: 0.5rem 0;
     text-align: center;
   }
+
   .cta {
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
   }
 
-  /* Software Section: Adjust box widths and grid */
   .software-box {
-    width: 90% !important; /* Make sure the inner coral box is not too wide */
+    width: 90% !important;
     padding: 1.5rem;
   }
+
   .software-shadow-box {
     margin: 2rem auto;
     padding: 1rem;
   }
+
   .software-heading {
     font-size: 1.3rem;
     top: -25px;
   }
+
   .tools-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
 
-  /* About Section: Reduce margins and adjust text */
   .about-box {
     max-width: 90%;
     padding: 1.5rem;
@@ -245,193 +270,32 @@ body {
     font-size: 0.95rem;
   }
 
-  /* Portfolio Section: Single column grid for projects, reduce gaps */
   .portfolio-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+
   .project-card {
     padding: 0.75rem;
   }
+
   .project-card h3 {
     font-size: 1rem;
   }
 
-  /* Contact Section: Adjust form input sizes */
   .contact-form input,
   .contact-form textarea {
     padding: 0.8rem;
     font-size: 1rem;
   }
 
-  /* Footer: Center align text */
   .footer {
     padding: 1rem;
     font-size: 0.9rem;
   }
 }
 
-/* Additional breakpoints for very small devices */
-@media (max-width: 480px) {
-  .hero-section .hero-text h2 {
-    font-size: 1.3rem;
-  }
-  .cta {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-  }
-  .navbar a {
-    font-size: 0.9rem;
-  }
-  .about-box p,
-  .about-box h2 {
-    font-size: 0.9rem;
-  }
-}
-/* 🌐 Responsive styles for mobile (screens smaller than 768px) */
-@media (max-width: 768px) {
-  header nav ul {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-
-  .hero-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-box img {
-    max-width: 80%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-
-  .hero-text {
-    text-align: center;
-  }
-
-  .mywork-section img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-
-  form {
-    width: 90%;
-    margin: auto;
-  }
-
-  .section {
-    padding: 1rem;
-  }
-}
-/* —————————————————————— */
-/* MOBILE OPTIMIZATIONS (≤600px) */
-/* —————————————————————— */
 @media (max-width: 600px) {
-  /* NAVIGATION */
-  .nav-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-  .logo h1 {
-    font-size: 1.8rem;
-    margin: 0;
-    text-align: center;
-  }
-  .logo .subheading {
-    display: block;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
-  .navbar ul {
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
-  }
-  .navbar a {
-    display: block;
-    width: 100%;
-    padding: 0.5rem 0;
-    text-align: center;
-  }
-
-  /* HERO */
-  .hero-section .hero-box {
-    flex-direction: column;
-    padding: 1.5rem 1rem;
-  }
-  .hero-section .hero-box img {
-    width: 140px;
-    margin-bottom: 1rem;
-  }
-  .hero-section .hero-text h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
-  }
-
-  /* SOFTWARE SECTION */
-  .software-shadow-box {
-    width: 95%;
-    margin: 2rem auto;
-    padding: 0;
-  }
-  .software-box {
-    width: 100%;
-    padding: 1.5rem;
-  }
-  .software-heading {
-    font-size: 1.3rem;
-    top: -25px;
-    padding: 0.4rem 1.5rem;
-  }
-  .tools-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  /* ABOUT ME */
-  .about-box {
-    max-width: 95%;
-    padding: 1.5rem;
-    margin: 2rem auto;
-    font-size: 0.95rem;
-  }
-
-  /* PORTFOLIO GRID */
-  .portfolio-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .project-card {
-    padding: 0.75rem;
-  }
-  .project-card h3 {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-  }
-
-  /* CONTACT */
-  .contact-form input,
-  .contact-form textarea {
-    padding: 0.8rem;
-    font-size: 1rem;
-  }
-  .contact {
-    padding: 2rem 1rem;
-  }
-
-  /* FOOTER */
-  .footer {
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
-}
-@media (max-width: 600px) {
-  /* Force the white shadow container full‑width */
   .software-shadow-box {
     width: 100% !important;
     padding: 0 !important;
@@ -439,44 +303,13 @@ body {
     margin: 2rem auto !important;
     overflow: visible !important;
   }
-  /* Make the inner coral box fluid */
-  .software-box {
-    width: 100% !important;
-    padding: 1.5rem 1rem !important;
-    margin: 0 auto !important;
-  }
-  /* Shrink the heading and reposition it */
-  .software-heading {
-    font-size: 1.2rem !important;
-    top: -20px !important;
-    padding: 0.4rem 1rem !important;
-  }
-}
-@media (max-width: 600px) {
-  /* HERO: constrain width and center */
-  .hero-section .hero-box {
-    max-width: 90% !important;
-    margin: 1rem auto !important;
-    padding: 1.5rem !important;
-  }
 
-  /* SOFTWARE SECTION: center the white shadow container */
-  .software-shadow-box {
-    max-width: 90% !important;
-    margin: 2rem auto !important;
-    padding: 0 !important;
-    box-sizing: border-box !important;
-    overflow: visible !important;
-  }
-
-  /* make the inner coral box full width */
   .software-box {
     width: 100% !important;
     padding: 1.5rem 1rem !important;
     margin: 0 auto !important;
   }
 
-  /* remove absolute heading and center it normally */
   .software-heading {
     position: relative !important;
     left: auto !important;
@@ -486,53 +319,24 @@ body {
     padding: 0.5rem 1rem !important;
     font-size: 1.3rem !important;
   }
-}
-/* Responsive Fixes for Mobile */
-@media (max-width: 768px) {
-  /* Fix Section 1: Navbar alignment */
-  .navbar {
-    padding: 15px;
-    border-left: 5px solid #ff6f61;
-    border-right: 5px solid #ff6f61;
+
+  .hero-section .hero-box {
+    max-width: 90% !important;
+    margin: 1rem auto !important;
+    padding: 1.5rem !important;
   }
 
-  .navbar h1 {
-    font-size: 20px;
-  }
-
-  .navbar p {
-    font-size: 12px;
-  }
-
-  .navbar ul li a {
-    font-size: 14px;
-  }
-
-  /* Section 2: Add white border to software box */
-  .software-section {
-    margin: 15px;
-    padding: 15px;
-    border: 2px solid white;
-    border-radius: 10px;
-  }
-
-  .software-item {
-    gap: 10px;
-  }
-
-  .software-item img {
-    width: 35px;
-    height: 35px;
-  }
-
-  /* Section 4: Center content properly */
-  .about-section {
-    margin: 15px;
-    padding: 15px;
+  .logo h1 {
+    font-size: 1.8rem;
     text-align: center;
   }
 
-  .about-section h2 {
-    font-size: 24px;
+  .navbar a {
+    font-size: 0.9rem;
+  }
+
+  .about-box p,
+  .about-box h2 {
+    font-size: 0.9rem;
   }
 }
