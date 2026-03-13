@@ -56,6 +56,10 @@ body {
   font-weight: bold;
 }
 
+.navbar a:hover {
+  color:#FF6F61;
+  transition:0.3s;
+}
 
 /* ================================
    HERO SECTION
@@ -143,6 +147,11 @@ body {
 /* ================================
    ABOUT SECTION
    ================================ */
+.section-title{
+  text-align:center;
+  font-size:2.5rem;
+  margin-bottom:40px;
+}
 .about-section {
   display: flex;
   justify-content: center;
@@ -204,6 +213,18 @@ body {
   object-fit: cover;
 }
 
+.project-card img,
+.project-card video {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img,
+.project-card:hover video {
+  transform: scale(1.05);
+}
 
 /* ================================
    CONTACT SECTION
