@@ -188,9 +188,10 @@ body {
    PORTFOLIO SECTION
    ================================ */
 .section-title{
-  text-align:center;
-  font-size:2.5rem;
-  margin-bottom:40px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
 }
 .portfolio-grid {
   display: grid;
