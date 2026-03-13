@@ -193,6 +193,16 @@ body {
   margin-bottom: 40px;
   letter-spacing: 2px;
 }
+
+.portfolio-category{
+  font-size:1.8rem;
+  margin-top:60px;
+  margin-bottom:20px;
+  text-align:center;
+  color:#FF6F61;
+  letter-spacing:1px;
+}
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
