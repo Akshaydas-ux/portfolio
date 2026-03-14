@@ -388,6 +388,32 @@ font-size:1.3rem;
 /* ================================
    MOBILE RESPONSIVE DESIGN
    ================================ */
+/* MOBILE HEADER */
+@media (max-width:768px){
+
+.nav-container{
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+.logo h1{
+font-size:1.2rem;
+margin-bottom:10px;
+}
+
+.navbar ul{
+flex-direction:row;
+justify-content:center;
+gap:15px;
+padding:0;
+}
+
+.navbar a{
+font-size:0.85rem;
+}
+
+}
 
 @media (max-width:768px){
 
@@ -454,6 +480,40 @@ height:auto;
 }
 
 /* Contact Section */
+@media (max-width:768px){
+
+.contact-container{
+max-width:90%;
+margin:0 auto;
+text-align:left;
+}
+
+.contact-container h2{
+text-align:center;
+margin-bottom:25px;
+}
+
+.contact-details{
+text-align:left;
+}
+
+}
+
+   @media (max-width:768px){
+
+.contact-form{
+width:100%;
+margin:0 auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+box-sizing:border-box;
+}
+
+}
+
 .contact-info{
 text-align:center;
 }
