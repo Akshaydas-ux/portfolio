@@ -82,11 +82,12 @@ box-sizing: border-box;
 }
 
 .hero-section img{
-width:250px;
-height:250px;
+width:220px;
+height:220px;
 object-fit:cover;
 border-radius:50%;
 box-shadow:0 10px 25px rgba(0,0,0,0.4);
+margin-bottom:1rem;
 }
 
 .hero-section h2 {
@@ -303,13 +304,6 @@ border-radius:10px;
 /* ================================
    RESPONSIVE OVERRIDES
    ================================ */
-
-.hero-section img {
-  width: 60%;
-  max-width: 200px;
-  margin-bottom: 1rem;
-}
-
 .hero-section h2 {
   font-size: 1.4rem;
   line-height: 1.3;
