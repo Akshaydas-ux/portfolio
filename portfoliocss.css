@@ -81,9 +81,12 @@ box-sizing: border-box;
   text-align: center;
 }
 
-.hero-section img {
-  width: 250px;
-  border-radius: 50%;
+.hero-section img{
+width:250px;
+height:250px;
+object-fit:cover;
+border-radius:50%;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
 
 .hero-section h2 {
