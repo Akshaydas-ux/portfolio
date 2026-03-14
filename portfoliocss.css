@@ -247,6 +247,9 @@ box-sizing: border-box;
 .project-card:hover video {
   transform: scale(1.05);
 }
+.project-card{
+overflow:hidden;
+}
 
 /* ================================
    CONTACT SECTION
@@ -266,9 +269,6 @@ box-sizing: border-box;
 .contact-wrapper{
 max-width:500px;
 margin:0 auto;
-}
-
-.contact-wrapper{
 background:#1a1a1a;
 padding:30px;
 border-radius:10px;
