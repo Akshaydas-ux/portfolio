@@ -13,9 +13,9 @@ body {
   color: #fff;
 }
 
-.container {
-width: 90%;
-max-width: 1200px;
+.container{
+width:92%;
+max-width:1100px;
 margin: 0 auto;
 padding: 0 15px;
 box-sizing: border-box;
@@ -424,11 +424,6 @@ gap:10px;
 text-align:center;
 }
 
-.navbar ul{
-flex-direction:column;
-gap:10px;
-}
-
 /* Hero Section */
 .hero-section .hero-box{
 flex-direction:column;
@@ -480,8 +475,6 @@ height:auto;
 }
 
 /* Contact Section */
-@media (max-width:768px){
-
 .contact-container{
 max-width:90%;
 margin:0 auto;
@@ -497,10 +490,6 @@ margin-bottom:25px;
 text-align:left;
 }
 
-}
-
-   @media (max-width:768px){
-
 .contact-form{
 width:100%;
 margin:0 auto;
@@ -510,21 +499,6 @@ margin:0 auto;
 .contact-form textarea{
 width:100%;
 box-sizing:border-box;
-}
-
-}
-
-.contact-info{
-text-align:center;
-}
-
-.contact-form input,
-.contact-form textarea{
-font-size:0.9rem;
-}
-
-.contact-form button{
-width:100%;
 }
 
 /* Section Titles */
