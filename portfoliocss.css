@@ -263,6 +263,16 @@ box-sizing: border-box;
   color: #000;
   font-size: 1rem;
 }
+.contact-wrapper{
+max-width:500px;
+margin:0 auto;
+}
+
+.contact-wrapper{
+background:#1a1a1a;
+padding:30px;
+border-radius:10px;
+}
 
 .contact-form button {
   background: #FF6F61;
