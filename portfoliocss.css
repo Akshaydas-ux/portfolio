@@ -338,12 +338,18 @@ padding:30px 20px;
 box-sizing:border-box;
 }
 
-.hero-section img{
-width:140px;
-}
-
 .hero-section h2{
 font-size:1.3rem;
+}
+
+}
+@media (max-width:768px){
+
+.hero-section img{
+width:150px;
+height:150px;
+object-fit:cover;
+border-radius:50%;
 }
 
 }
@@ -353,11 +359,13 @@ font-size:1.3rem;
   .hero-section .hero-box {
     flex-direction: row;
     gap: 2rem;
-  }
-  .hero-section img {
-    width: 40%;
-    max-width: 250px;
-  }
+  }   
+   .hero-section img {
+  width:220px;
+  height:220px;
+  object-fit:cover;
+  border-radius:50%;
+}
 }
 
 @media (min-width: 1024px) {
