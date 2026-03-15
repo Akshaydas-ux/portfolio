@@ -241,25 +241,33 @@ color:#222;
   letter-spacing:1px;
 }
 
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
+.portfolio-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:30px;
 }
 
-.project-card {
-  background: #1f1f1f;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.project-card{
+background:#1f1f1f;
+padding:12px;
+text-align:center;
+border-radius:12px;
+margin-bottom:1rem;
+transition:transform 0.35s ease, box-shadow 0.35s ease;
+border:1px solid #2a2a2a;
 }
 
 .project-card:hover{
-  transform: translateY(-8px);
-  box-shadow:0 10px 25px rgba(0,0,0,0.5);
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+.project-card h3,
+.project-card p{
+font-size:0.9rem;
+letter-spacing:1px;
+margin-top:10px;
+color:#ddd;
 }
 
 .project-card img,
