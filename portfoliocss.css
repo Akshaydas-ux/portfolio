@@ -152,7 +152,9 @@ text-align:center;
 display:flex;
 flex-direction:column;
 align-items:center;
+justify-content:center;
 gap:10px;
+height:110px;
 transition:transform 0.3s ease, box-shadow 0.3s ease;
 border:1px solid #2a2a2a;
 }
@@ -392,16 +394,6 @@ border-radius:50%;
   border-radius:50%;
 }
 }
-
-@media (min-width: 1024px) {
-  .tools-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .software-box {
-    width: 600px;
-  }
-}
-
 /* ================================
    MOBILE RESPONSIVE DESIGN
    ================================ */
