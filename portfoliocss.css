@@ -277,6 +277,10 @@ transition:0.4s;
 pointer-events: none;
 }
 
+.project-card.video-card::after {
+  display: none;
+}
+
 .project-card:hover::after{
 opacity:1;
 }
