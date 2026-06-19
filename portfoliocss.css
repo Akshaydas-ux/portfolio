@@ -481,9 +481,10 @@ background:#000;
   text-underline-offset: 3px;
 }
 
-.contact-info i {
-  color: var(--accent);
-  margin-right: 8px;
+.contact-info i{
+width:20px;
+color:var(--accent);
+margin-right:8px;
 }
 
 .contact-form {
