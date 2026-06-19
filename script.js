@@ -1,6 +1,6 @@
 const reveals = document.querySelectorAll('.fade-up');
 
-window.addEventListener('scroll', () => {
+function revealSections() {
   reveals.forEach(item => {
     const top = item.getBoundingClientRect().top;
 
@@ -8,4 +8,8 @@ window.addEventListener('scroll', () => {
       item.classList.add('show');
     }
   });
-});
+}
+
+window.addEventListener('scroll', revealSections);
+
+revealSections();
