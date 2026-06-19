@@ -92,6 +92,17 @@ box-shadow:0 10px 25px rgba(0,0,0,0.4);
 margin-bottom:1rem;
 }
 
+.resume-btn{
+display:inline-block;
+margin-left:10px;
+padding:12px 24px;
+background:#fff;
+color:#000;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
 /* Hero Text Styling */
 
 .hero-text h1{
