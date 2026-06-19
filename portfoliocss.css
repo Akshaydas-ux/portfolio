@@ -51,6 +51,18 @@ opacity:1;
 transform:translateY(0);
 }
 
+.cursor-glow{
+position:fixed;
+width:250px;
+height:250px;
+background:rgba(255,111,97,.15);
+border-radius:50%;
+pointer-events:none;
+filter:blur(80px);
+transform:translate(-50%,-50%);
+z-index:-1;
+}
+
 .container {
   width: 92%;
   max-width: 1140px;
@@ -114,6 +126,10 @@ transform:translateY(0);
 
 .navbar a:hover {
   color: var(--accent);
+}
+
+.navbar a.active{
+color:var(--accent);
 }
 
 .navbar a:focus-visible {
