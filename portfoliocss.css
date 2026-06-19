@@ -40,6 +40,17 @@ video {
   display: block;
 }
 
+.fade-up{
+opacity:0;
+transform:translateY(40px);
+transition:all .8s ease;
+}
+
+.fade-up.show{
+opacity:1;
+transform:translateY(0);
+}
+
 .container {
   width: 92%;
   max-width: 1140px;
@@ -155,6 +166,23 @@ video {
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+.hero-socials{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-top:20px;
+}
+
+.hero-socials a{
+font-size:1.5rem;
+transition:0.3s;
+}
+
+.hero-socials a:hover{
+color:white;
+transform:translateY(-4px);
 }
 
 .hero-text h1 {
