@@ -231,6 +231,13 @@ box-shadow:0 15px 35px rgba(0,0,0,0.6);
   margin-bottom: 40px;
   letter-spacing: 2px;
 }
+.section-subtitle{
+text-align:center;
+color:#aaa;
+max-width:600px;
+margin:0 auto 50px;
+line-height:1.6;
+}
 
 .portfolio-category{
   font-size:1.8rem;
