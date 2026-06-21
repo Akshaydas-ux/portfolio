@@ -100,16 +100,18 @@ countObserver.observe(counter);
 });
 
 
-window.addEventListener("load",()=>{
+function hideLoader() {
+    const loader = document.getElementById("loader");
 
-const loader = document.getElementById("loader");
+    if(loader){
+        loader.style.opacity = "0";
 
-loader.style.opacity = "0";
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 600);
+    }
+}
 
-setTimeout(()=>{
+window.addEventListener("load", hideLoader);
 
-loader.style.display = "none";
-
-},600);
-
-});
+setTimeout(hideLoader, 3000);
