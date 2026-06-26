@@ -679,6 +679,27 @@ gap:25px;
 margin-top:25px;
 }
 
+.service-card{
+display:block;
+text-decoration:none;
+color:white;
+cursor:pointer;
+}
+
+.service-card::after{
+content:"View Work →";
+display:block;
+margin-top:20px;
+font-weight:700;
+color:var(--accent);
+opacity:0;
+transition:.3s;
+}
+
+.service-card:hover::after{
+opacity:1;
+}
+
 .video-card{
 display:flex;
 flex-direction:column;
