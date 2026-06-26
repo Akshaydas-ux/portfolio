@@ -649,6 +649,34 @@ color:white;
   line-height: 1.7;
 }
 
+.portfolio-category-main{
+font-size:2.2rem;
+font-weight:800;
+text-align:center;
+margin:70px 0 35px;
+color:#fff;
+letter-spacing:2px;
+position:relative;
+}
+
+.portfolio-category-main::after{
+content:"";
+display:block;
+width:120px;
+height:3px;
+background:var(--accent);
+margin:15px auto 0;
+border-radius:5px;
+}
+
+.portfolio-category{
+margin:45px 0 25px;
+font-size:1.5rem;
+color:var(--accent);
+text-align:left;
+
+}
+
 .portfolio-category {
   font-size: 1.7rem;
   margin-top: 56px;
