@@ -674,18 +674,33 @@ object-fit:cover;
 }
 
 .video-card{
-display:flex;
-justify-content:center;
+position:relative;
 }
 
 .video-card video{
+width:100%;
+display:block;
+border-radius:10px;
+background:#000;
+object-fit:cover;
+}
+
+/* Landscape videos */
+.video-card:not(.portrait-video) video{
 aspect-ratio:16/9;
 }
 
+/* Portrait reels */
+.portrait-video{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
 .portrait-video video{
-aspect-ratio:9/16;
+width:100%;
 max-width:280px;
-margin:auto;
+aspect-ratio:9/16;
 }
 
 .video-card{
