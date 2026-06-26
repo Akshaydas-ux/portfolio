@@ -81,6 +81,27 @@ z-index:-1;
   color: var(--muted);
 }
 
+#scrollTopBtn{
+position:fixed;
+bottom:30px;
+right:30px;
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+background:var(--accent);
+color:white;
+font-size:20px;
+cursor:pointer;
+display:none;
+z-index:999;
+transition:.3s;
+}
+
+#scrollTopBtn:hover{
+transform:translateY(-5px);
+}
+
 /* ================================
    NAVBAR
    ================================ */
